@@ -1,0 +1,18 @@
+public class Main
+  {
+  public static void main(String args[])
+    {
+  float item1 = 1000;
+  float perc1 = item1 * 1/10;
+  float sell1 = item1 - perc1;
+  float item2 = 1000;
+  float perc2 = item2* 1/5;
+  float sell2 = item2 + perc2;
+  float sell = (sell1 + sell2) - (item1 + item2);
+  System.out.printf("The final net profit/loss is %f",sell);
+
+
+
+      
+  }
+}
