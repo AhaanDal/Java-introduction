@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+
+public class Main 
+   
+{
+ public static void main( String[] args)
+  
+   {
+       Scanner sc = new Scanner(System.in);
+      int small = 0;
+      int medium = 0;
+      int large = 0;
+
+   
+
+      while(true){
+        System.out.println("What size of pizza would you like, small, medium or large. Type end if you would like to end the order");
+         String pizza = sc.nextLine();
+         if(pizza.contains("small")){
+            small  += 1;
+            System.out.println("The cost of a small pizza is 100₹");
+               }
+         else if(pizza.contains("medium")){
+                  medium  += 1;
+                  System.out.print("The cost of a medium pizza is 200₹");
+         }
+         else if(pizza.contains("large")){
+               large  += 1;
+               System.out.println("The cost of a large pizza is 500₹");
+         }
+            else if(pizza.contains("end")){
+             break;
+            }
+         else{
+            System.out.println("Invalid size/statement");
+
+
+            
+         }
+      }
+         int finalorder = (small*100)+(medium*200)+(large*500);
+         
+      System.out.print("Your final order is "+small+" small pizzas, "+medium+" medium pizzas and "+large+" large pizzas. The total cost is "+finalorder+"₹");
+
+
+
+
+
+            
+         
+            
+
+         
+
+
+
+         
+      
+      
+
+
+
+      
+
+
+
+
+
+
+
