@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class Main
+
+{
+ public static void main( String[] args)
+  
+   {
+       Scanner input = new Scanner(System.in);
+
+
+      //takes input of 2 numbers for the equation
+      System.out.print("Enter your first number: ");
+      double num1 = input.nextDouble(); // number 1
+      System.out.println("");
+      System.out.print("Enter your second number: ");
+      double num2 = input.nextDouble(); // number 2
+      System.out.println(""); 
+
+      int i = 5;  
+
+
+
+
+      while(i == 5)
+         {
+            System.out.println("Please enter the operation you would like to carry out \n 1) Additon \n 2) Subtraction \n 3) Multiplication \n 4) Division \n 5) Exit operation "); // dropdown menu for the different operations
+            System.out.print("The operation you would like to carry out is: ");
+         int operater = input.nextInt();
+            System.out.println("");
+
+
+         switch(operater){ // switch cases method holding all the different operations
+
+            case 1:
+              System.out.println("The sum of "+num1+" and "+num2+" is equal to "+(num1 + num2));
+               System.out.println("");
+               break; // case 1 is addition
+               
+            case 2:
+               
+              System.out.println("The difference of " +num1+ " and "+num2+" is equal to "+(num1 - num2));
+               System.out.println("");
+               break; // case 2 is subtraction
+            case 3:
+              System.out.println(" The product of "+num1+" and "+num2+" is equal to "+(num1 * num2));
+               System.out.println("");
+               break; // case 3 is multiplication
+            case 4:
+              System.out.println(" The quotient of "+num1+" and "+num2+" is equal to "+(num1 / num2));
+               System.out.println("");
+               break; // case 4 is division
+            case 5:
+               System.out.println("The operation has been ended");
+               i = 6; // case 5 is to end the for loop
+               
