@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+
+  
+    Scanner input = new Scanner(System.in);
+
+
+    System.out.print("Enter your name: ");
+
+    String str = input.nextLine();
+
+    String up_name = str.toUpperCase();
+    char first = up_name.charAt(0);
+    int total = up_name.length();
+    char  last= up_name.charAt(total - 1);
+
+
+    System.out.println("The first letter of "+str+"'s name is "+first+".");
+    System.out.println("The last letter letter of "+str+"'s name is "+last+".");
+    
+
+    
+    
+
+    
+
+
+
+    
+
+
+
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+            
+         
+      
+
+
+
+     
+
+       
+         
+
+
+      
+    
+      
+      
+         
+         
+ 
+
+
+   
+     
+            
