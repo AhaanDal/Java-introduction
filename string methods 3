@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    String first_name = "       first name         ";
+    String last_name = "       last name                ";
+    String con = (first_name.concat(last_name));
+    System.out.println(con);// joins 2 strings
+
+
+
+    String replace = (con.replace('a','x'));
+    System.out.println(replace);// replaces certain characters / phrase from the string to another character/ phrase
+
+
+
+    
+    String trim = (replace.trim());
+    System.out.print(trim);// removes spaces from string
+
+  
+
+
+    
+
+
+  
+    
+
+
+
+
+
+
+      
+
+
+
+      
+    
+    
+      
+
+      
+
+
+
+
+
+
+      
+    
+    
+    
+
+    
+    
+
+    
+
+
+
+    
+
+
+
+    
+  }
+}
